@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Membership Plans - RealEstateX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pricing.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="">
+                <h4>RealEstateX</h4>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="listings.html" class="nav-link">Listings</a></li>
+                    <li><a href="property-details.html" class="nav-link">Property</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+                    <li><a href="login.html" class="btn btn-accent nav-cta">Login</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h1 class="intro-title">Choose Your Plan</h1>
+                <p class="intro-subtitle">Flexible plans that fit every real estate professional</p>
+                <p class="intro-description">Each plan unlocks powerful tools to help you list more properties, connect with more clients, and close more deals. Invest in your success with RealEstateX.</p>
+                
+                <!-- Pricing Toggle -->
+                <div class="pricing-toggle">
+                    <span class="toggle-label active" id="monthlyLabel">Monthly</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="pricingToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="toggle-label" id="annualLabel">Annual <span class="save-badge">Save 20%</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-container">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">Free</h3>
+                    <div class="plan-price monthly-price">
+                        <span class="currency">$</span>0
+                        <span class="period">/month</span>
+                    </div>
+                    <div class="plan-price annual-price">
+                        <span class="currency">$</span>0
+                        <span class="period">/year</span>
+                    </div>
+                    <p class="plan-description">Perfect for individuals just getting started in real estate</p>
+                    
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">List up to 3 properties</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Basic support</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Access to dashboard</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Standard listing visibility</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Basic property statistics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-cta">
+                        <button class="btn btn-gray btn-full plan-button" data-plan="Free">Get Started</button>
+                    </div>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Best Value</div>
+                    <h3 class="plan-name">Pro</h3>
+                    <div class="plan-price monthly-price">
+                        <span class="currency">$</span>29
+                        <span class="period">/month</span>
+                    </div>
+                    <div class="plan-price annual-price">
+                        <span class="currency">$</span>279
+                        <span class="period">/year</span>
+                    </div>
+                    <p class="plan-description">Ideal for active agents looking to grow their business</p>
+                    
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Up to 25 listings</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Priority listing placement</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Featured agent profile</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Basic analytics dashboard</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Email & phone support</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Client management tools</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Social media integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-cta">
+                        <button class="btn btn-accent btn-full plan-button" data-plan="Pro">Upgrade to Pro</button>
+                    </div>
+                </div>
+                
+                <!-- Elite Plan -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">Elite</h3>
+                    <div class="plan-price monthly-price">
+                        <span class="currency">$</span>99
+                        <span class="period">/month</span>
+                    </div>
+                    <div class="plan-price annual-price">
+                        <span class="currency">$</span>949
+                        <span class="period">/year</span>
+                    </div>
+                    <p class="plan-description">For professionals and teams who want the ultimate advantage</p>
+                    
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Unlimited listings</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Top-tier support</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Featured homepage placement</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Advanced analytics & reports</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Priority lead assignment</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Custom branding options</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Team management tools</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">API access</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Early access to new features</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-cta">
+                        <button class="btn btn-primary btn-full plan-button" data-plan="Elite">Become Elite</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Plan Comparison</h2>
+            <p class="section-subtitle">See which plan is right for you</p>
+            
+            <div class="comparison-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Free</th>
+                            <th>Pro</th>
+                            <th>Elite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Number of Listings</td>
+                            <td>3</td>
+                            <td>25</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Featured Listings</td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td>2 per month</td>
+                            <td>10 per month</td>
+                        </tr>
+                        <tr>
+                            <td>Agent Profile</td>
+                            <td>Basic</td>
+                            <td>Featured</td>
+                            <td>Premium</td>
+                        </tr>
+                        <tr>
+                            <td>Analytics</td>
+                            <td>Basic</td>
+                            <td>Standard</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Customer Support</td>
+                            <td>Email</td>
+                            <td>Email & Phone</td>
+                            <td>Priority 24/7</td>
+                        </tr>
+                        <tr>
+                            <td>Homepage Visibility</td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Lead Management</td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Client CRM</td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Team Accounts</td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td>Up to 10</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Branding</td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>API Access</td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td><span class="x-icon">✕</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Elements -->
+    <section class="trust-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose RealEstateX</h2>
+            <p class="section-subtitle">Join thousands of real estate professionals who trust us</p>
+            
+            <div class="trust-container">
+                <div class="trust-item">
+                    <div class="trust-icon">🔒</div>
+                    <h3 class="trust-title">Secure Platform</h3>
+                    <p class="trust-text">Your data is protected with enterprise-grade security and regular backups.</p>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">💯</div>
+                    <h3 class="trust-title">Trusted by Agents</h3>
+                    <p class="trust-text">Over 10,000 real estate professionals use RealEstateX to grow their business.</p>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">💰</div>
+                    <h3 class="trust-title">100% Transparent Pricing</h3>
+                    <p class="trust-text">No hidden fees or surprise charges. What you see is what you pay.</p>
+                </div>
+            </div>
+            
+            <p class="trust-note">No hidden fees. Cancel anytime. 30-day money-back guarantee.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Teaser -->
+    <section class="faq-teaser">
+        <div class="container">
+            <h2 class="faq-teaser-title">Still Unsure?</h2>
+            <p class="faq-teaser-text">We've answered the most common questions about our plans and features. If you can't find what you're looking for, our support team is always ready to help.</p>
+            <a href="faq.html" class="btn btn-large btn-outline">See our FAQs</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                        <h4>RealEstateX</h4>
+                    </a>
+                    <p class="footer-about">Premium real estate website templates designed to help you launch and grow your business quickly and professionally.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="listings.html" class="footer-link">Properties</a></li>
+                        <li><a href="team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">t</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RealEstateX. All rights reserved. | <a href="#" style="color: inherit;">Privacy Policy</a> | <a href="#" style="color: inherit;">Terms of Service</a> | <a href="#" style="color: inherit;">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">↑</div>
+
+    <!-- Modal -->
+    <div class="modal" id="demoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-icon">🎉</div>
+            <h3 class="modal-title">This is a Demo</h3>
+            <p class="modal-text">In a live environment, this would proceed to payment processing. No payment is needed for this demonstration.</p>
+            <button class="btn btn-accent" id="modalButton">Got it</button>
+        </div>
+    </div>
+    <script src="assets/js/pricing.js"></script>
+</body>
+</html>

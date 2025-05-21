@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listings - RealEstateX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/listings.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="">
+                <h4>RealEstateX</h4>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="listings.html" class="nav-link active">Listings</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact" class="btn btn-accent nav-cta">Get Started</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Property Listings</h1>
+            <p class="page-description">Browse our extensive collection of premium properties available for sale and rent</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <form id="filterForm" class="filter-container">
+                <div class="filter-group">
+                    <label for="propertyType" class="filter-label">Property Type</label>
+                    <select id="propertyType" class="filter-select">
+                        <option value="">All Types</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="condo">Condo</option>
+                        <option value="villa">Villa</option>
+                        <option value="land">Land</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="location" class="filter-label">Location</label>
+                    <select id="location" class="filter-select">
+                        <option value="">All Locations</option>
+                        <option value="new-york">New York</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="miami">Miami</option>
+                        <option value="seattle">Seattle</option>
+                        <option value="austin">Austin</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="priceRange" class="filter-label">Price Range</label>
+                    <select id="priceRange" class="filter-select">
+                        <option value="">Any Price</option>
+                        <option value="0-300000">Under $300,000</option>
+                        <option value="300000-500000">$300,000 - $500,000</option>
+                        <option value="500000-800000">$500,000 - $800,000</option>
+                        <option value="800000-1000000">$800,000 - $1,000,000</option>
+                        <option value="1000000+">$1,000,000+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="bedrooms" class="filter-label">Bedrooms</label>
+                    <select id="bedrooms" class="filter-select">
+                        <option value="">Any</option>
+                        <option value="1">1+ Bedroom</option>
+                        <option value="2">2+ Bedrooms</option>
+                        <option value="3">3+ Bedrooms</option>
+                        <option value="4">4+ Bedrooms</option>
+                        <option value="5">5+ Bedrooms</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-accent filter-button">Apply Filters</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section class="listings-section">
+        <div class="container">
+            <div class="listings-header">
+                <h2 class="listings-title">Available Properties</h2>
+                <p class="listings-count">Showing <span id="propertyCount">9</span> properties</p>
+            </div>
+            
+            <div class="listings-grid" id="listingsGrid">
+                <!-- Property 1 -->
+                <div class="property-card" data-type="house" data-location="los-angeles" data-price="750000" data-bedrooms="4">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Villa">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$750,000</div>
+                        <h3 class="property-title">Modern Family Home</h3>
+                        <div class="property-address">123 Luxury Lane, Los Angeles, CA</div>
+                        <div class="property-features">
+                            <div class="property-feature beds">
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="property-feature baths">
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="property-feature area">
+                                <span>2,500 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Beautiful modern home with open floor plan, gourmet kitchen, and stunning backyard with pool. Perfect for entertaining and family living in a prestigious neighborhood.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="property-card" data-type="apartment" data-location="new-york" data-price="3500" data-bedrooms="2">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Modern Apartment">
+                        <div class="property-badge">For Rent</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$3,500/mo</div>
+                        <h3 class="property-title">Luxury Downtown Apartment</h3>
+                        <div class="property-address">456 Downtown Ave, New York, NY</div>
+                        <div class="property-features">
+                            <div class="property-feature beds">
+                                <span>2 Beds</span>
+                            </div>
+                            <div class="property-feature baths">
+                                <span>2 Baths</span>
+                            </div>
+                            <div class="property-feature area">
+                                <span>1,200 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Luxurious apartment in the heart of the city with stunning views, modern amenities, and 24/7 security. Walking distance to restaurants, shops, and public transportation.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="property-card" data-type="house" data-location="chicago" data-price="495000" data-bedrooms="3">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Family Home">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$495,000</div>
+                        <h3 class="property-title">Charming Suburban Home</h3>
+                        <div class="property-address">789 Suburban Dr, Chicago, IL</div>
+                        <div class="property-features">
+                            <div class="property-feature beds">
+                                <span>3 Beds</span>
+                            </div>
+                            <div class="property-feature baths">
+                                <span>2 Baths</span>
+                            </div>
+                            <div class="property-feature area">
+                                <span>1,800 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Perfect family home in a quiet neighborhood with excellent schools, spacious yard, and updated kitchen. Close to parks, shopping centers, and major highways.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 4 -->
+                <div class="property-card" data-type="villa" data-location="miami" data-price="1250000" data-bedrooms="5">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Villa">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$1,250,000</div>
+                        <h3 class="property-title">Beachfront Luxury Villa</h3>
+                        <div class="property-address">101 Beachfront Rd, Miami, FL</div>
+                        <div class="property-features">
+                            <div class="property-feature beds">
+                                <span>5 Beds</span>
+                            </div>
+                            <div class="property-feature baths">
+                                <span>4 Baths</span>
+                            </div>
+                            <div class="property-feature area">
+                                <span>3,800 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Stunning beachfront property with panoramic ocean views, private pool, and luxury finishes throughout. Includes a gourmet kitchen, home theater, and expansive outdoor living space.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 5 -->
+                <div class="property-card" data-type="apartment" data-location="seattle" data-price="2800" data-bedrooms="1">
+                      data-location="seattle" data-price="2800" data-bedrooms="1">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Modern Condo">
+                        <div class="property-badge">For Rent</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$2,800/mo</div>
+                        <h3 class="property-title">Urban Loft Apartment</h3>
+                        <div class="property-address">222 Urban Lofts, Seattle, WA</div>
+                        <div class="property-features">
+                            <div class="property-feature beds">
+                                <span>1 Bed</span>
+                            </div>
+                            <div class="property-feature baths">
+                                <span>1 Bath</span>
+                            </div>
+                            <div class="property-feature area">
+                                <span>950 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Stylish urban loft with high ceilings, exposed brick, and modern amenities in a trendy neighborhood. Features floor-to-ceiling windows with city views and designer finishes.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 6 -->
+                <div class="property-card" data-type="house" data-location="austin" data-price="650000" data-bedrooms="4">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Country Home">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$650,000</div>
+                        <h3 class="property-title">Modern Country Home</h3>
+                        <div class="property-address">333 Country Lane, Austin, TX</div>
+                        <div class="property-features">
+                            <div class="property-feature beds">
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="property-feature baths">
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="property-feature area">
+                                <span>2,200 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Charming country home on 2 acres with mature trees, wraparound porch, and recently renovated interior. Perfect blend of rustic charm and modern convenience.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 7 (Hidden initially) -->
+                <div class="property-card hidden-property" data-type="condo" data-location="chicago" data-price="425000" data-bedrooms="2" style="display: none;">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Modern Condo">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$425,000</div>
+                        <h3 class="property-title">Downtown Luxury Condo</h3>
+                        <div class="property-address">555 Lakeview Dr, Chicago, IL</div>
+                        <div class="property-features">
+                            <div class="property-feature beds">
+                                <span>2 Beds</span>
+                            </div>
+                            <div class="property-feature baths">
+                                <span>2 Baths</span>
+                            </div>
+                            <div class="property-feature area">
+                                <span>1,100 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Stunning condo with lake views, hardwood floors, and gourmet kitchen. Building amenities include fitness center, rooftop deck, and 24-hour doorman.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 8 (Hidden initially) -->
+                <div class="property-card hidden-property" data-type="house" data-location="new-york" data-price="875000" data-bedrooms="3" style="display: none;">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Brownstone">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$875,000</div>
+                        <h3 class="property-title">Classic Brownstone</h3>
+                        <div class="property-address">777 Historic St, New York, NY</div>
+                        <div class="property-features">
+                            <div class="property-feature beds">
+                                <span>3 Beds</span>
+                            </div>
+                            <div class="property-feature baths">
+                                <span>2.5 Baths</span>
+                            </div>
+                            <div class="property-feature area">
+                                <span>2,000 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Beautiful historic brownstone with original details and modern updates. Features high ceilings, crown molding, and a private garden in a prime location.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 9 (Hidden initially) -->
+                <div class="property-card hidden-property" data-type="villa" data-location="miami" data-price="1850000" data-bedrooms="6" style="display: none;">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Estate">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$1,850,000</div>
+                        <h3 class="property-title">Waterfront Estate</h3>
+                        <div class="property-address">999 Bayview Dr, Miami, FL</div>
+                        <div class="property-features">
+                            <div class="property-feature beds">
+                                <span>6 Beds</span>
+                            </div>
+                            <div class="property-feature baths">
+                                <span>5.5 Baths</span>
+                            </div>
+                            <div class="property-feature area">
+                                <span>5,200 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Magnificent waterfront estate with private dock, infinity pool, and breathtaking views. Features smart home technology, wine cellar, and guest house.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults">
+                <div class="no-results-icon">🔍</div>
+                <h3 class="no-results-title">No Properties Found</h3>
+                <p class="no-results-text">We couldn't find any properties matching your search criteria. Try adjusting your filters.</p>
+                <button class="btn btn-outline" id="resetFilters">Reset Filters</button>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-large btn-outline" id="loadMoreBtn">Load More Properties</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <h2 class="cta-title">Didn't find what you're looking for?</h2>
+            <p class="cta-subtitle">Let us help you find your dream property. Our expert agents are ready to assist you with your specific requirements.</p>
+            <a href="#contact" class="btn btn-large btn-accent">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                        <h4>RealEstateX</h4>
+                    </a>
+                    <p class="footer-about">Premium real estate website templates designed to help you launch and grow your business quickly and professionally.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="listings.html" class="footer-link">Properties</a></li>
+                        <li><a href="#" class="footer-link">Features</a></li>
+                        <li><a href="#" class="footer-link">Testimonials</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Support Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">t</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RealEstateX. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/listings.js"></script>
+</body>
+</html>

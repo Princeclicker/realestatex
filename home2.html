@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstateX - Premium Real Estate Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style2.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <a href="home2.html" class="logo">
+            <img src="assets/images/logo.png" alt="">
+            <h4>RealEstateX</h4>
+        </a>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle">Properties</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="listings.html" class="dropdown-item">All Properties</a></li>
+                            <li><a href="#" class="dropdown-item">For Sale</a></li>
+                            <li><a href="#" class="dropdown-item">For Rent</a></li>
+                            <li><a href="#" class="dropdown-item">New Developments</a></li>
+                            <li><a href="property-details.html" class="dropdown-item">Property Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                            <li><a href="team.html" class="dropdown-item">Our Team</a></li>
+                            <li><a href="pricing.html" class="dropdown-item">Pricing Plans</a></li>
+                            <li><a href="faq.html" class="dropdown-item">FAQ</a></li>
+                            <li><a href="contact.html" class="dropdown-item">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                            <li><a href="#" class="dropdown-item">Market Insights</a></li>
+                            <li><a href="#" class="dropdown-item">Buying Guide</a></li>
+                            <li><a href="#" class="dropdown-item">Selling Tips</a></li>
+                            <li><a href="bonus.html" class="dropdown-item">Tools & Calculators</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="submit-property.html" class="nav-link">Submit Property</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="btn btn-accent nav-cta">Login / Register</a>
+                    </li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Find Your Dream Property</span>
+                <h1 class="hero-title">Discover the Perfect Place to Call Home</h1>
+                <p class="hero-description">RealEstateX connects you with thousands of properties and trusted real estate professionals to help you find the perfect home, investment property, or commercial space.</p>
+                <div class="hero-buttons">
+                    <a href="listings.html" class="btn btn-accent btn-large">Browse Properties</a>
+                    <a href="submit-property.html" class="btn btn-outline btn-large">List Your Property</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">15K+</div>
+                        <div class="hero-stat-text">Properties</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">10K+</div>
+                        <div class="hero-stat-text">Happy Clients</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">500+</div>
+                        <div class="hero-stat-text">Expert Agents</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <h2 class="search-title">Find Your Perfect Property</h2>
+                <form class="search-form">
+                    <div class="form-group">
+                        <label class="form-label">Location</label>
+                        <input type="text" class="form-control" placeholder="City, neighborhood, or address">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Property Type</label>
+                        <select class="form-control">
+                            <option value="">All Types</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="condo">Condo</option>
+                            <option value="villa">Villa</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Price Range</label>
+                        <select class="form-control">
+                            <option value="">Any Price</option>
+                            <option value="100000-300000">$100,000 - $300,000</option>
+                            <option value="300000-500000">$300,000 - $500,000</option>
+                            <option value="500000-800000">$500,000 - $800,000</option>
+                            <option value="800000-1000000">$800,000 - $1,000,000</option>
+                            <option value="1000000+">$1,000,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-accent btn-large search-btn">Search Properties</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="section featured-properties">
+        <div class="container">
+            <h2 class="section-title centered">Featured Properties</h2>
+            <p class="section-subtitle centered">Explore our handpicked selection of premium properties</p>
+            
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Luxury Villa">
+                        <div class="property-tag">For Sale</div>
+                        <div class="property-price">$1,250,000</div>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Modern Luxury Villa</h3>
+                        <div class="property-location">
+                            <span class="property-location-icon">📍</span>
+                            <span>123 Palm Avenue, Beverly Hills, CA</span>
+                        </div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🛏️</span>
+                                <span class="property-feature-text">4 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🚿</span>
+                                <span class="property-feature-text">3 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">📏</span>
+                                <span class="property-feature-text">3,500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Downtown Apartment">
+                        <div class="property-tag">For Rent</div>
+                        <div class="property-price">$3,800/mo</div>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Downtown Luxury Apartment</h3>
+                        <div class="property-location">
+                            <span class="property-location-icon">📍</span>
+                            <span>456 Skyline Blvd, San Francisco, CA</span>
+                        </div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🛏️</span>
+                                <span class="property-feature-text">2 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🚿</span>
+                                <span class="property-feature-text">2 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">📏</span>
+                                <span class="property-feature-text">1,200 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Family Home">
+                        <div class="property-tag">For Sale</div>
+                        <div class="property-price">$875,000</div>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Spacious Family Home</h3>
+                        <div class="property-location">
+                            <span class="property-location-icon">📍</span>
+                            <span>789 Maple Street, Portland, OR</span>
+                        </div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🛏️</span>
+                                <span class="property-feature-text">5 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🚿</span>
+                                <span class="property-feature-text">3.5 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">📏</span>
+                                <span class="property-feature-text">3,200 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-btn">
+                <a href="listings.html" class="btn btn-outline">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services">
+        <div class="container">
+            <h2 class="section-title centered">Our Services</h2>
+            <p class="section-subtitle centered">Comprehensive real estate solutions for all your needs</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">Property Listings</h3>
+                    <p class="service-description">Browse thousands of properties for sale and rent, with detailed information and high-quality images.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3 class="service-title">Property Management</h3>
+                    <p class="service-description">Professional management services for property owners, including tenant screening and maintenance.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title">Market Analysis</h3>
+                    <p class="service-description">Get detailed market reports and property valuations to make informed real estate decisions.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">🔑</div>
+                    <h3 class="service-title">Buying Assistance</h3>
+                    <p class="service-description">Expert guidance through the entire buying process, from property search to closing the deal.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3 class="service-title">Selling Support</h3>
+                    <p class="service-description">Comprehensive selling services including property valuation, marketing, and negotiation.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3 class="service-title">Investment Advisory</h3>
+                    <p class="service-description">Professional advice on real estate investments to maximize returns and minimize risks.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section how-it-works">
+        <div class="container">
+            <h2 class="section-title centered">How It Works</h2>
+            <p class="section-subtitle centered">Simple steps to find your dream property or sell your existing one</p>
+            
+            <div class="steps-container">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Search Properties</h3>
+                    <p class="step-description">Browse our extensive database of properties using our advanced search filters.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Connect with Agents</h3>
+                    <p class="step-description">Get in touch with our experienced real estate agents for guidance.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Schedule Viewings</h3>
+                    <p class="step-description">Book property viewings at your convenience through our platform.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Close the Deal</h3>
+                    <p class="step-description">Finalize your transaction with professional support every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title centered">What Our Clients Say</h2>
+            <p class="section-subtitle centered">Hear from our satisfied customers about their experience with RealEstateX.</p>
+            
+            <div class="testimonials-container">
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    "RealEstateX made finding our dream home incredibly easy. The platform is intuitive, and the agents were knowledgeable and responsive. We couldn't be happier with our new home!"
+                                </div>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                                </div>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-name">Sarah Johnson</div>
+                                    <div class="testimonial-position">Homeowner</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    "As a real estate investor, I've used many platforms, but RealEstateX stands out for its comprehensive market data and excellent property management services. It's been instrumental in growing my portfolio."
+                                </div>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                                </div>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-name">Michael Chen</div>
+                                    <div class="testimonial-position">Property Investor</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    "Selling my property through RealEstateX was a breeze. Their marketing strategies attracted multiple offers, and I ended up selling above asking price. The entire process was smooth and professional."
+                                </div>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Emily Rodriguez">
+                                </div>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-name">Emily Rodriguez</div>
+                                    <div class="testimonial-position">Property Seller</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls" id="testimonialControls">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+                
+                <div class="testimonial-arrows">
+                    <div class="testimonial-arrow" id="prevTestimonial">❮</div>
+                    <div class="testimonial-arrow" id="nextTestimonial">❯</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agents Section -->
+    <section class="section agents">
+        <div class="container">
+            <h2 class="section-title centered">Meet Our Agents</h2>
+            <p class="section-subtitle centered">Our team of experienced real estate professionals</p>
+            
+            <div class="agents-grid">
+                <!-- Agent 1 -->
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Smith">
+                    </div>
+                    <div class="agent-content">
+                        <h3 class="agent-name">John Smith</h3>
+                        <div class="agent-position">Senior Real Estate Agent</div>
+                        <div class="agent-contact">
+                            <a href="#" class="agent-contact-item">📞</a>
+                            <a href="#" class="agent-contact-item">✉️</a>
+                            <a href="#" class="agent-contact-item">in</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Agent 2 -->
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Jessica Williams">
+                    </div>
+                    <div class="agent-content">
+                        <h3 class="agent-name">Jessica Williams</h3>
+                        <div class="agent-position">Luxury Property Specialist</div>
+                        <div class="agent-contact">
+                            <a href="#" class="agent-contact-item">📞</a>
+                            <a href="#" class="agent-contact-item">✉️</a>
+                            <a href="#" class="agent-contact-item">in</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Agent 3 -->
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="David Johnson">
+                    </div>
+                    <div class="agent-content">
+                        <h3 class="agent-name">David Johnson</h3>
+                        <div class="agent-position">Commercial Property Expert</div>
+                        <div class="agent-contact">
+                            <a href="#" class="agent-contact-item">📞</a>
+                            <a href="#" class="agent-contact-item">✉️</a>
+                            <a href="#" class="agent-contact-item">in</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Agent 4 -->
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Maria Garcia">
+                    </div>
+                    <div class="agent-content">
+                        <h3 class="agent-name">Maria Garcia</h3>
+                        <div class="agent-position">Residential Sales Manager</div>
+                        <div class="agent-contact">
+                            <a href="#" class="agent-contact-item">📞</a>
+                            <a href="#" class="agent-contact-item">✉️</a>
+                            <a href="#" class="agent-contact-item">in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-btn">
+                <a href="team.html" class="btn btn-outline">View All Agents</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section blog">
+        <div class="container">
+            <h2 class="section-title centered">Latest Articles</h2>
+            <p class="section-subtitle centered">Stay updated with the latest real estate news and insights</p>
+            
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Real Estate Investment">
+                        <div class="blog-date">June 15, 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Investment</span>
+                        <h3 class="blog-title">Top 10 Real Estate Investment Strategies for 2025</h3>
+                        <p class="blog-excerpt">Discover the most effective investment strategies in today's real estate market. From rental properties to REITs, we cover all the options to help you maximize returns.</p>
+                        <div class="blog-author">
+                            <div class="blog-author-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Robert Wilson">
+                            </div>
+                            <span class="blog-author-name">Robert Wilson</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Home Renovation">
+                        <div class="blog-date">June 8, 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Home Improvement</span>
+                        <h3 class="blog-title">Budget-Friendly Renovations That Increase Home Value</h3>
+                        <p class="blog-excerpt">Learn which home improvements give you the best return on investment. These affordable renovations can significantly increase your property's market value.</p>
+                        <div class="blog-author">
+                            <div class="blog-author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Amanda Lee">
+                            </div>
+                            <span class="blog-author-name">Amanda Lee</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Market Trends">
+                        <div class="blog-date">May 29, 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Market Analysis</span>
+                        <h3 class="blog-title">Real Estate Market Forecast: What to Expect in the Coming Year</h3>
+                        <p class="blog-excerpt">Our experts analyze current trends and provide insights into what the real estate market might look like in the next 12 months. Essential reading for buyers and sellers.</p>
+                        <div class="blog-author">
+                            <div class="blog-author-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Daniel Kim">
+                            </div>
+                            <span class="blog-author-name">Daniel Kim</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-btn">
+                <a href="blog.html" class="btn btn-outline">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Find Your Dream Property?</h2>
+            <p class="cta-subtitle">Join thousands of satisfied clients who found their perfect home with RealEstateX</p>
+            <div class="cta-buttons">
+                <a href="register.html" class="btn cta-btn btn-large">Get Started Today</a>
+                <a href="contact.html" class="btn cta-btn-outline btn-large">Contact Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-container">
+                <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+                <p class="newsletter-subtitle">Stay updated with the latest properties, market insights, and real estate tips</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address">
+                    <button type="submit" class="btn btn-accent">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                        <h4>RealEstateX</h4>
+                    </a>
+                    <p class="footer-about">RealEstateX is a premier real estate platform connecting buyers, sellers, and agents. Our mission is to make real estate transactions simple, efficient, and rewarding for everyone involved.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">f</a>
+                        <a href="#" class="footer-social-link">t</a>
+                        <a href="#" class="footer-social-link">in</a>
+                        <a href="#" class="footer-social-link">ig</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link"><span class="footer-link-icon">▶</span> Home</a></li>
+                        <li><a href="listings.html" class="footer-link"><span class="footer-link-icon">▶</span> Properties</a></li>
+                        <li><a href="team.html" class="footer-link"><span class="footer-link-icon">▶</span> Our Team</a></li>
+                        <li><a href="about.html" class="footer-link"><span class="footer-link-icon">▶</span> About Us</a></li>
+                        <li><a href="blog.html" class="footer-link"><span class="footer-link-icon">▶</span> Blog</a></li>
+                        <li><a href="contact.html" class="footer-link"><span class="footer-link-icon">▶</span> Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Property Types</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link"><span class="footer-link-icon">▶</span> Residential</a></li>
+                        <li><a href="#" class="footer-link"><span class="footer-link-icon">▶</span> Commercial</a></li>
+                        <li><a href="#" class="footer-link"><span class="footer-link-icon">▶</span> Industrial</a></li>
+                        <li><a href="#" class="footer-link"><span class="footer-link-icon">▶</span> Land</a></li>
+                        <li><a href="#" class="footer-link"><span class="footer-link-icon">▶</span> Luxury</a></li>
+                        <li><a href="#" class="footer-link"><span class="footer-link-icon">▶</span> Investment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📍</span>
+                        <span class="footer-contact-text">123 Real Estate Ave, Suite 500<br>San Francisco, CA 94105</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📞</span>
+                        <span class="footer-contact-text">(555) 123-4567</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">✉️</span>
+                        <span class="footer-contact-text">info@realestatex.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">🕒</span>
+                        <span class="footer-contact-text">Mon-Fri: 9AM-6PM<br>Sat: 10AM-4PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RealEstateX. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    <a href="#" class="footer-bottom-link">Terms of Service</a>
+                    <a href="#" class="footer-bottom-link">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">↑</div>
+
+    <script src="assets/js/script2.js"></script>
+</body>
+</html>

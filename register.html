@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - RealEstateX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="register.html" class="logo">
+                <img src="assets/images/logo.png" alt="">
+                <h4>RealEstateX</h4>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="listings.html" class="nav-link">Listings</a></li>
+                    <li><a href="property-details.html" class="nav-link">Property</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="login.html" class="btn btn-accent nav-cta">Login</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="register-container">
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">✓</div>
+                    <h3 class="success-title">Registration Successful!</h3>
+                    <p class="success-text">Your account has been created successfully. Please check your email to verify your account.</p>
+                    <a href="login.html" class="btn btn-accent">Go to Login</a>
+                </div>
+                
+                <div id="registerForm">
+                    <div class="register-header">
+                        <h1 class="register-title">Create Your Account</h1>
+                        <p class="register-subtitle">Join RealEstateX and start your real estate journey</p>
+                    </div>
+                    
+                    <div class="info-box">
+                        <div class="info-title">
+                            <span class="info-icon">ℹ️</span>
+                            <span>Why Join RealEstateX?</span>
+                        </div>
+                        <p class="info-text">Create an account to list properties, save favorites, get personalized recommendations, and connect with agents. It's free to join!</p>
+                    </div>
+                    
+                    <form class="register-form" id="registrationForm">
+                        <div class="account-type-container">
+                            <label class="account-type-option" id="buyerOption">
+                                <input type="radio" name="accountType" value="buyer" class="account-type-radio" checked>
+                                <div class="account-type-icon">🏠</div>
+                                <div class="account-type-title">Home Buyer/Renter</div>
+                                <div class="account-type-description">Looking for properties to buy or rent</div>
+                            </label>
+                            
+                            <label class="account-type-option" id="agentOption">
+                                <input type="radio" name="accountType" value="agent" class="account-type-radio">
+                                <div class="account-type-icon">👔</div>
+                                <div class="account-type-title">Agent/Seller</div>
+                                <div class="account-type-description">Want to list properties for sale or rent</div>
+                            </label>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name*</label>
+                                <input type="text" id="firstName" class="form-control" placeholder="Enter your first name" required>
+                                <div class="error-message" id="firstNameError">Please enter your first name</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name*</label>
+                                <input type="text" id="lastName" class="form-control" placeholder="Enter your last name" required>
+                                <div class="error-message" id="lastNameError">Please enter your last name</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address*</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                            <div class="error-message" id="emailError">Please enter a valid email address</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                            <div class="error-message" id="phoneError">Please enter a valid phone number</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password*</label>
+                            <div class="password-container">
+                                <input type="password" id="password" class="form-control" placeholder="Create a password" required>
+                                <span class="toggle-password" id="togglePassword">👁️</span>
+                            </div>
+                            <div class="password-strength">
+                                <div class="password-strength-meter" id="passwordStrengthMeter"></div>
+                            </div>
+                            <div class="password-strength-text" id="passwordStrengthText">Password strength: Not entered</div>
+                            <div class="error-message" id="passwordError">Password must be at least 8 characters with letters, numbers, and special characters</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword" class="form-label">Confirm Password*</label>
+                            <div class="password-container">
+                                <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+                                <span class="toggle-password" id="toggleConfirmPassword">👁️</span>
+                            </div>
+                            <div class="error-message" id="confirmPasswordError">Passwords do not match</div>
+                        </div>
+                        
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="termsCheckbox" class="checkbox-input" required>
+                            <label for="termsCheckbox" class="checkbox-label">
+                                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="newsletterCheckbox" class="checkbox-input">
+                            <label for="newsletterCheckbox" class="checkbox-label">
+                                Send me updates about new properties and real estate tips
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-accent btn-full">Create Account</button>
+                        
+                        <div class="divider">
+                            <span>or continue with</span>
+                        </div>
+                        
+                        <div class="social-login">
+                            <button type="button" class="social-btn">
+                                <span class="social-icon">G</span>
+                                <span>Google</span>
+                            </button>
+                            <button type="button" class="social-btn">
+                                <span class="social-icon">f</span>
+                                <span>Facebook</span>
+                            </button>
+                        </div>
+                        
+                        <div class="register-footer">
+                            Already have an account? <a href="login.html">Log in</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="">
+                    <h4>RealEstateX</h4>
+                </a>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
+                    <a href="faq.html" class="footer-link">FAQ</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2025 RealEstateX. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/register.js"></script>
+</body>
+</html>

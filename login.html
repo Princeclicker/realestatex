@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - RealEstateX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="login.html" class="logo">
+                <img src="assets/images/logo.png" alt="">
+                <h4>RealEstateX</h4>
+            </a>
+            <div class="header-links">
+                <a href="index.html" class="header-link">Home</a>
+                <a href="about.html" class="header-link">About</a>
+                <a href="contact.html" class="header-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="login-section">
+                <!-- Login Form -->
+                <div class="login-container">
+                    <div class="login-header">
+                        <div class="login-logo">
+                            <div class="logo-icon" style="width: 50px; height: 50px; font-size: 1.5rem;">E</div>
+                        </div>
+                        <h1 class="login-title">Sign In to Your Dashboard</h1>
+                        <p class="login-subtitle">Access your RealEstateX account</p>
+                    </div>
+                    
+                    <div class="alert alert-success" id="successAlert">
+                        Login successful! Redirecting to your dashboard...
+                    </div>
+                    
+                    <div class="alert alert-error" id="errorAlert">
+                        Invalid email or password. Please try again.
+                    </div>
+                    
+                    <form id="loginForm" class="login-form">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <div class="password-field">
+                                <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                                <button type="button" class="password-toggle" id="passwordToggle">👁️</button>
+                            </div>
+                        </div>
+                        <div class="form-options">
+                            <label class="remember-me">
+                                <input type="checkbox" id="rememberMe">
+                                <span>Remember me</span>
+                            </label>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-full">Sign In</button>
+                    </form>
+                    
+                    <div class="login-divider">or continue with</div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-btn google-btn">
+                            <span class="social-icon">G</span>
+                            <span>Continue with Google</span>
+                        </button>
+                        <button type="button" class="social-btn facebook-btn">
+                            <span class="social-icon">f</span>
+                            <span>Continue with Facebook</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Info Box -->
+                <div class="info-container">
+                    <div class="info-header">
+                        <h2 class="info-title">Welcome to RealEstateX</h2>
+                        <p class="info-text">Access your personalized dashboard to manage properties, track leads, and grow your real estate business.</p>
+                    </div>
+                    
+                    <div class="info-features">
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <div>Manage your property listings</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <div>Track client interactions and leads</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <div>Access marketing tools and templates</div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <div>Generate detailed performance reports</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-text">
+                        <p>Don't have an account? Contact your administrator to request access.</p>
+                        <p style="margin-top: 10px; font-style: italic;">Admin access available for preview purposes.</p>
+                    </div>
+                    
+                    <div class="info-cta">
+                        <a href="contact.html" class="btn btn-accent">Contact Admin</a>
+                    </div>
+                    
+                    <div class="info-image">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Dashboard Preview">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 RealEstateX. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

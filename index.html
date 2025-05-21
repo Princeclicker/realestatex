@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstateX - Premium Real Estate Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="">
+                <h4>RealEstateX</h4>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#properties" class="nav-link">Listings</a></li>
+                    <li><a href="#features" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact" class="btn btn-accent nav-cta">Get Started</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Launch Your Own Real Estate Business in Minutes</h1>
+                <p class="hero-subtitle">A complete, ready-to-go website template built for success</p>
+                <div class="hero-buttons">
+                    <a href="#properties" class="btn btn-large btn-accent">See Properties</a>
+                    <a href="#cta" class="btn btn-large btn-outline">Buy This Template Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section" id="search">
+        <div class="container">
+            <div class="search-container">
+                <h2 class="search-title">Find Your Dream Property</h2>
+                <form class="search-form" id="searchForm">
+                    <div class="form-group">
+                        <label for="propertyType">Property Type</label>
+                        <select class="form-control" id="propertyType">
+                            <option value="">Select Type</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="condo">Condo</option>
+                            <option value="land">Land</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select class="form-control" id="location">
+                            <option value="">Select Location</option>
+                            <option value="new-york">New York</option>
+                            <option value="los-angeles">Los Angeles</option>
+                            <option value="chicago">Chicago</option>
+                            <option value="miami">Miami</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="priceRange">Price Range</label>
+                        <select class="form-control" id="priceRange">
+                            <option value="">Select Price Range</option>
+                            <option value="100-300">$100k - $300k</option>
+                            <option value="300-500">$300k - $500k</option>
+                            <option value="500-800">$500k - $800k</option>
+                            <option value="800+">$800k+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bedrooms">Bedrooms</label>
+                        <select class="form-control" id="bedrooms">
+                            <option value="">Select Bedrooms</option>
+                            <option value="1">1+ Bedroom</option>
+                            <option value="2">2+ Bedrooms</option>
+                            <option value="3">3+ Bedrooms</option>
+                            <option value="4">4+ Bedrooms</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-accent search-button">Search Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="section" id="properties">
+        <div class="container">
+            <h2 class="section-title">Featured Properties</h2>
+            <p class="section-subtitle">Discover our handpicked selection of premium properties</p>
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Villa">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$750,000</div>
+                        <div class="property-address">123 Luxury Lane, Beverly Hills, CA</div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>2,500 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Beautiful modern home with open floor plan, gourmet kitchen, and stunning backyard with pool.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Modern Apartment">
+                        <div class="property-badge">For Rent</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$3,500/mo</div>
+                        <div class="property-address">456 Downtown Ave, New York, NY</div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span>2 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>2 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>1,200 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Luxurious apartment in the heart of the city with stunning views, modern amenities, and 24/7 security.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Family Home">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$495,000</div>
+                        <div class="property-address">789 Suburban Dr, Chicago, IL</div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span>3 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>2 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>1,800 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Perfect family home in a quiet neighborhood with excellent schools, spacious yard, and updated kitchen.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property 4 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Villa">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$1,250,000</div>
+                        <div class="property-address">101 Beachfront Rd, Miami, FL</div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span>5 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>4 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>3,800 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Stunning beachfront property with panoramic ocean views, private pool, and luxury finishes throughout.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property 5 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Modern Condo">
+                        <div class="property-badge">For Rent</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$2,800/mo</div>
+                        <div class="property-address">222 Urban Lofts, Seattle, WA</div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span>1 Bed</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>1 Bath</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>950 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Stylish urban loft with high ceilings, exposed brick, and modern amenities in a trendy neighborhood.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property 6 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Country Home">
+                        <div class="property-badge">For Sale</div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$650,000</div>
+                        <div class="property-address">333 Country Lane, Austin, TX</div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span>2,200 sqft</span>
+                            </div>
+                        </div>
+                        <p class="property-description">Charming country home on 2 acres with mature trees, wraparound porch, and recently renovated interior.</p>
+                        <div class="property-link">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">We make launching your real estate business simple and effective</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>✓</span>
+                    </div>
+                    <h3 class="feature-title">Trust</h3>
+                    <p class="feature-description">Our templates are designed by industry experts to build instant credibility with your clients and convert visitors into customers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>⚡</span>
+                    </div>
+                    <h3 class="feature-title">Simplicity</h3>
+                    <p class="feature-description">Get your business online in minutes, not weeks. Our templates are easy to customize, even if you have no technical experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>🚀</span>
+                    </div>
+                    <h3 class="feature-title">Instant Launch</h3>
+                    <p class="feature-description">Everything you need is included - just add your branding and listings, and you're ready to start attracting clients immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Success stories from real estate professionals using our templates</p>
+            <div class="testimonials-container">
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">I launched my real estate business with this template and had my first client within a week. The professional design gave me instant credibility in my market.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Sarah Johnson</div>
+                                <div class="author-title">Real Estate Agent, Chicago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">As someone with zero technical skills, I was amazed at how easy it was to customize this template. My business looks like I spent thousands on a custom website.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Rodriguez">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Michael Rodriguez</div>
+                                <div class="author-title">Property Manager, Miami</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">The search functionality and property listings on this template helped me generate leads immediately. Best investment I've made for my business in years.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Jennifer Lee">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Jennifer Lee</div>
+                                <div class="author-title">Broker, San Francisco</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls" id="testimonialControls">
+                    <div class="control-dot active" data-index="0"></div>
+                    <div class="control-dot" data-index="1"></div>
+                    <div class="control-dot" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <h2 class="cta-title">Start Your Real Estate Business Today!</h2>
+            <p class="cta-subtitle">Get this premium template and launch your professional website in minutes. No technical skills required.</p>
+            <a href="#contact" class="btn btn-large btn-accent">Buy This Template Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have questions? We're here to help you succeed</p>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3 class="form-title">Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent form-submit">Send Message</button>
+                    </form>
+                </div>
+                <div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span>📍</span>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Our Location</h3>
+                                <p>123 Business Avenue, Suite 500<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span>📞</span>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone Number</h3>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span>✉️</span>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Address</h3>
+                                <p>info@RealEstateX.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <span>Map Location Placeholder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                        <h4>RealEstateX</h4>
+                    </a>
+                    <p class="footer-about">Premium real estate website templates designed to help you launch and grow your business quickly and professionally.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#properties" class="footer-link">Properties</a></li>
+                        <li><a href="#features" class="footer-link">Features</a></li>
+                        <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Support Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">t</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RealEstateX. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

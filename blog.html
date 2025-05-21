@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Real Estate Insights & Advice | RealEstateX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="">
+                <h4>RealEstateX</h4>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="listings.html" class="nav-link">Listings</a></li>
+                    <li><a href="property-details.html" class="nav-link">Property</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="contact.html" class="btn btn-accent nav-cta">Get Started</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Intro Banner -->
+    <section class="blog-intro">
+        <div class="container">
+            <div class="blog-intro-content">
+                <h1 class="blog-title">Real Estate Insights & Advice</h1>
+                <p class="blog-subtitle">Read expert tips, market trends, buyer guides, and success stories.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="search-filter-section">
+        <div class="container">
+            <div class="search-filter-container">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="Search articles..." id="searchInput">
+                </div>
+                <div class="filter-dropdown">
+                    <select class="filter-select" id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="buying">Buying</option>
+                        <option value="selling">Selling</option>
+                        <option value="investment">Investment</option>
+                        <option value="tips">Tips & Advice</option>
+                        <option value="trends">Market Trends</option>
+                    </select>
+                </div>
+                <div class="filter-dropdown">
+                    <select class="filter-select" id="sortFilter">
+                        <option value="latest">Latest</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="oldest">Oldest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="categories-container">
+                <div class="category-item active" data-category="all">
+                    <span class="category-icon">📊</span>
+                    <span class="category-name">All</span>
+                </div>
+                <div class="category-item" data-category="buying">
+                    <span class="category-icon">🏠</span>
+                    <span class="category-name">Buying Advice</span>
+                </div>
+                <div class="category-item" data-category="selling">
+                    <span class="category-icon">💰</span>
+                    <span class="category-name">Selling Tips</span>
+                </div>
+                <div class="category-item" data-category="investment">
+                    <span class="category-icon">📈</span>
+                    <span class="category-name">Investor Guides</span>
+                </div>
+                <div class="category-item" data-category="tips">
+                    <span class="category-icon">💡</span>
+                    <span class="category-name">Tips & Advice</span>
+                </div>
+                <div class="category-item" data-category="trends">
+                    <span class="category-icon">📊</span>
+                    <span class="category-name">Property Trends</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article Section -->
+    <section class="featured-article-section">
+        <div class="container">
+            <div class="featured-article">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="5 Essential Tips for First-Time Home Buyers in 2025">
+                </div>
+                <div class="featured-content">
+                    <span class="featured-tag">Featured</span>
+                    <h2 class="featured-title">5 Essential Tips for First-Time Home Buyers in 2025</h2>
+                    <p class="featured-excerpt">Navigating the real estate market as a first-time buyer can be overwhelming. Our experts share their top strategies to help you find the perfect home without breaking the bank or making common mistakes.</p>
+                    <div class="featured-meta">
+                        <div class="meta-item">
+                            <span>👤</span>
+                            <span>Sarah Johnson</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>📅</span>
+                            <span>June 15, 2025</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn featured-btn">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid Section -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <p class="section-subtitle">Stay informed with our latest insights and expert advice</p>
+            
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog Card 1 -->
+                <div class="blog-card" data-category="buying">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="How to Negotiate the Best Price on Your Dream Home">
+                        <span class="blog-card-tag">Buying</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">How to Negotiate the Best Price on Your Dream Home</h3>
+                        <p class="blog-card-excerpt">Learn proven negotiation strategies that can save you thousands on your home purchase. Our expert agents share their insider tips for getting the best possible deal in any market condition.</p>
+                        <div class="blog-card-meta">
+                            <div class="blog-card-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                                </div>
+                                <span>Sarah Johnson</span>
+                            </div>
+                            <div class="blog-card-date">June 10, 2025</div>
+                        </div>
+                        <div class="blog-card-link">
+                            <a href="#" class="btn btn-outline btn-small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 2 -->
+                <div class="blog-card" data-category="selling">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="10 Home Staging Tips That Will Help You Sell Faster">
+                        <span class="blog-card-tag">Selling</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">10 Home Staging Tips That Will Help You Sell Faster</h3>
+                        <p class="blog-card-excerpt">Discover how to make your property stand out in a competitive market. These professional staging techniques can help you attract more buyers and secure a quicker sale at a better price.</p>
+                        <div class="blog-card-meta">
+                            <div class="blog-card-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Rodriguez">
+                                </div>
+                                <span>Michael Rodriguez</span>
+                            </div>
+                            <div class="blog-card-date">June 5, 2025</div>
+                        </div>
+                        <div class="blog-card-link">
+                            <a href="#" class="btn btn-outline btn-small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 3 -->
+                <div class="blog-card" data-category="investment">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Real Estate Investment Strategies for Beginners">
+                        <span class="blog-card-tag">Investment</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">Real Estate Investment Strategies for Beginners</h3>
+                        <p class="blog-card-excerpt">Looking to build wealth through real estate? This comprehensive guide walks you through the fundamentals of property investment, from financing options to identifying properties with strong ROI potential.</p>
+                        <div class="blog-card-meta">
+                            <div class="blog-card-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Emily Chen">
+                                </div>
+                                <span>Emily Chen</span>
+                            </div>
+                            <div class="blog-card-date">May 28, 2025</div>
+                        </div>
+                        <div class="blog-card-link">
+                            <a href="#" class="btn btn-outline btn-small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 4 -->
+                <div class="blog-card" data-category="trends">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="2025 Real Estate Market Forecast: What to Expect">
+                        <span class="blog-card-tag">Trends</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">2025 Real Estate Market Forecast: What to Expect</h3>
+                        <p class="blog-card-excerpt">Our experts analyze current market conditions and predict what's ahead for buyers, sellers, and investors. Get insights on interest rates, inventory levels, and emerging neighborhood hotspots.</p>
+                        <div class="blog-card-meta">
+                            <div class="blog-card-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Robert Thompson">
+                                </div>
+                                <span>Robert Thompson</span>
+                            </div>
+                            <div class="blog-card-date">May 20, 2025</div>
+                        </div>
+                        <div class="blog-card-link">
+                            <a href="#" class="btn btn-outline btn-small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 5 -->
+                <div class="blog-card" data-category="tips">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Understanding Mortgage Options: A Comprehensive Guide">
+                        <span class="blog-card-tag">Tips</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">Understanding Mortgage Options: A Comprehensive Guide</h3>
+                        <p class="blog-card-excerpt">Confused by the various mortgage products available? This guide breaks down different loan types, interest rates, terms, and qualification requirements to help you make an informed decision.</p>
+                        <div class="blog-card-meta">
+                            <div class="blog-card-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="Jessica Martinez">
+                                </div>
+                                <span>Jessica Martinez</span>
+                            </div>
+                            <div class="blog-card-date">May 15, 2025</div>
+                        </div>
+                        <div class="blog-card-link">
+                            <a href="#" class="btn btn-outline btn-small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 6 -->
+                <div class="blog-card" data-category="selling">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="The Ultimate Guide to Preparing Your Home for Sale">
+                        <span class="blog-card-tag">Selling</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">The Ultimate Guide to Preparing Your Home for Sale</h3>
+                        <p class="blog-card-excerpt">From essential repairs to strategic upgrades, learn what improvements will give you the best return on investment when selling your home. Our step-by-step checklist will help you maximize your property's value.</p>
+                        <div class="blog-card-meta">
+                            <div class="blog-card-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="James Wilson">
+                                </div>
+                                <span>James Wilson</span>
+                            </div>
+                            <div class="blog-card-date">May 8, 2025</div>
+                        </div>
+                        <div class="blog-card-link">
+                            <a href="#" class="btn btn-outline btn-small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 7 -->
+                <div class="blog-card" data-category="buying">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Red Flags to Watch for During Home Inspections">
+                        <span class="blog-card-tag">Buying</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">Red Flags to Watch for During Home Inspections</h3>
+                        <p class="blog-card-excerpt">Don't let your dream home become a nightmare. Our expert inspectors reveal the warning signs that could indicate serious problems, from foundation issues to electrical hazards and everything in between.</p>
+                        <div class="blog-card-meta">
+                            <div class="blog-card-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="David Wilson">
+                                </div>
+                                <span>David Wilson</span>
+                            </div>
+                            <div class="blog-card-date">May 1, 2025</div>
+                        </div>
+                        <div class="blog-card-link">
+                            <a href="#" class="btn btn-outline btn-small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 8 -->
+                <div class="blog-card" data-category="investment">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1556156653-e5a7676c4f34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="How to Build a Profitable Rental Property Portfolio">
+                        <span class="blog-card-tag">Investment</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">How to Build a Profitable Rental Property Portfolio</h3>
+                        <p class="blog-card-excerpt">Ready to generate passive income through real estate? This article outlines strategies for acquiring, managing, and scaling a rental property portfolio that delivers consistent returns over time.</p>
+                        <div class="blog-card-meta">
+                            <div class="blog-card-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Amanda Lee">
+                                </div>
+                                <span>Amanda Lee</span>
+                            </div>
+                            <div class="blog-card-date">April 25, 2025</div>
+                        </div>
+                        <div class="blog-card-link">
+                            <a href="#" class="btn btn-outline btn-small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 9 -->
+                <div class="blog-card" data-category="tips">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-f5764594a8d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Smart Home Technology: Is It Worth the Investment?">
+                        <span class="blog-card-tag">Tips</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">Smart Home Technology: Is It Worth the Investment?</h3>
+                        <p class="blog-card-excerpt">From security systems to energy-efficient appliances, we evaluate the most popular smart home technologies and their impact on property value, convenience, and appeal to modern buyers.</p>
+                        <div class="blog-card-meta">
+                            <div class="blog-card-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Thomas Brown">
+                                </div>
+                                <span>Thomas Brown</span>
+                            </div>
+                            <div class="blog-card-date">April 18, 2025</div>
+                        </div>
+                        <div class="blog-card-link">
+                            <a href="#" class="btn btn-outline btn-small">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <div class="page-item disabled">❮</div>
+                <div class="page-item active">1</div>
+                <div class="page-item">2</div>
+                <div class="page-item">3</div>
+                <div class="page-item">❯</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Want Personalized Advice?</h2>
+            <p class="cta-subtitle">Our agents are ready to answer any questions you have — free consultation available.</p>
+            <a href="contact.html" class="btn btn-large btn-accent">Talk to an Agent</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                        <h4>RealEstateX</h4>
+                    </a>
+                    <p class="footer-about">Premium real estate website templates designed to help you launch and grow your business quickly and professionally.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="listings.html" class="footer-link">Properties</a></li>
+                        <li><a href="team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">t</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RealEstateX. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">↑</div>
+
+<script src="assets/js/blog.js"></script>
+</body>
+</html>
